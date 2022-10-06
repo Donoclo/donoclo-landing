@@ -10,13 +10,17 @@
   /* scroll-snap-align: start; */
 
 }
+.main-image-container{
+  width: 1200px;
+  height: 730px;
+  position: relative;
 
+}
 .main-image{
   width: 1200px;
-  height: 850px;
+  height: 730px;
 
-  margin-top: 20px;
-  position: absolute;
+  margin-bottom: 80px;
   /* bottom: 0; */
 }
 
@@ -26,13 +30,15 @@
 }
 
 .main-description{
+  font-size: 18px;
   width: 250px;
   word-break: break-all;
 
   position: absolute;
-  right: 25%;
-  bottom: 40%;
+  right: 215px;
+  bottom: 240px;
   color: white;
+  text-align: end;
 }
 
 .explore-container{

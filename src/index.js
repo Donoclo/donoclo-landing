@@ -16,8 +16,9 @@ root.render(
   <React.StrictMode>
     <Header />
     <Main />
-    <Card />
     <RoadMap />
+
+    <Card />
     <Carousel />    
     <Closet />
   </React.StrictMode>

@@ -1,3 +1,4 @@
+
 .card-container {
   /* height: 850px; */
   width: 100%;
@@ -10,10 +11,9 @@
   justify-content: center;
   /* scroll-snap-align: start; */
   /* background-color: antiquewhite; */
-  
 }
 .card-video{
-  height:700px;
+  height:600px;
   /* margin: 12px 0; */
 }
 
