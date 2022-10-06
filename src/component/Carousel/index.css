@@ -1,20 +1,22 @@
 .Carousel {
-    width: 1200px;
-    height: 850px;
-    background: #000000;
+
+    /* background-color: azure; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
   }
+
   .carousel-container-container{
     width: 1200px;
-    height: auto;
-    position: relative;   
+    height: 500px;
   }
 
   .carousel-container {
-    width: 100%;
-    height: auto;
+    width: 1200px;
+    height:50%;
     position: absolute;
   }
   
