@@ -8,7 +8,7 @@ import C05 from './assets/C05.png';
 import C06 from './assets/C06.png';
 import C07 from './assets/C07.png';
 
-function App() {
+function Carousel() {
   const [index, setIndex] = useState(0);
 
   const mod = (n, m) => {
@@ -57,6 +57,8 @@ function App() {
 
   return (
     <div className="Carousel">
+      <h3 className="h3">EXPLORE</h3>
+      <div className="carousel-container-container">
       <div className="carousel-container">
         {cards.map((item, i) => {
           const indexLeft3 = mod(index - 3, cards.length);
@@ -93,14 +95,15 @@ function App() {
               className={className}
               src={item.image}
               alt="C"
-              onClick ={() => alert(index)}
+              // onClick ={() => alert(index)}
             ></img>
             </>
           );
         })}
       </div>
+      </div>
     </div>
   );
 }
 
-export default App;
+export default Carousel;

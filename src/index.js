@@ -3,12 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import Carousel from './component/Carousel'
+import Closet from './component/Closet';
+import RoadMap from './component/RoadMap';
+import Header from './component/Header';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Header />
+    <Closet />
+    <RoadMap />
+    <Carousel />
   </React.StrictMode>
 );
 
