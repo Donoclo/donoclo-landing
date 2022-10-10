@@ -6,6 +6,7 @@ import RoadMap from './component/RoadMap';
 import Header from './component/Header';
 import Main from './component/Main';
 import Card from './component/Card';
+import Mint from './component/Mint';
 
 function App() {
   
@@ -33,12 +34,15 @@ const DIVIDER_HEIGHT = 5;
           setScrollIndex(2);
         } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 2) {
           //현재 2페이지
-          alert("현재 2페이지, down");
+          // alert("현재 2페이지, down");
           outerDivRef.current.scrollTo({
             top: pageHeight * 2,
             left: 0,
             behavior: "smooth",
           });
+          // alert("Hi");
+          // document.getElementsByClassName("roadmap-ani")[0].style.backgroundColor = "red";
+          
           setScrollIndex(3);
         } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 3) {
           //현재 2페이지
@@ -106,7 +110,7 @@ const DIVIDER_HEIGHT = 5;
             left: 0,
             behavior: "smooth",
           });
-          setScrollIndex(4);
+          setScrollIndex(3);
         } else {
           // 현재 3페이지
           // alert("현재 5페이지, up");
@@ -127,14 +131,20 @@ const DIVIDER_HEIGHT = 5;
   }, []);
 
   return (
-    <div ref={outerDivRef} className="outer">
+    <>
       <Header />
-      <Main />
-      <Card />
-      <RoadMap />
-      <Carousel />    
-      <Closet />
-  </div>
+      <div ref={outerDivRef} className="outer">
+        <div className ="main-ani" style={scrollIndex === 1 ? { animation: 'fade-in 2s ease-out' } : {}}>
+          <Main />
+        </div>
+        <Card />
+        <div className ="roadmap-ani" style={scrollIndex === 3 ? { animation: 'fade-in 2s ease-out' } : {}}>
+          <RoadMap />
+        </div>
+        <Carousel />
+        <Closet />
+      </div>
+    </>
   );
 }
 
