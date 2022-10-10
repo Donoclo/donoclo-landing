@@ -17,8 +17,7 @@ function Carousel() {
   };
 
   const cards = [
-    {
-      id: "1",
+    {      id: "1",
       image: C01,
     },
     {
@@ -50,57 +49,55 @@ function Carousel() {
   useEffect(() => {
     setTimeout(() => {
       setIndex((index + 1) % cards.length);
-      console.log(index);
+      // console.log(index);
     }, 2500);
   }, [index]);
 
 
   return (
-    <div className="Carousel">
+    // <div className="Carousel">
+    <div className="Carousel" style={{background: 'url(img/card-background.png)'}}>
       <h3 className="h3">EXPLORE</h3>
-      <div className="carousel-container-container">
       <div className="carousel-container">
-        {cards.map((item, i) => {
-          const indexLeft3 = mod(index - 3, cards.length);
-          const indexLeft2 = mod(index - 2, cards.length);
-          const indexLeft1 = mod(index - 1, cards.length);
-          const indexRight1 = mod(index + 1, cards.length);
-          const indexRight2 = mod(index + 2, cards.length);
-          const indexRight3 = mod(index + 3, cards.length);
+      {cards.map((item, i) => {
+        const indexLeft3 = mod(index - 3, cards.length);
+        const indexLeft2 = mod(index - 2, cards.length);
+        const indexLeft1 = mod(index - 1, cards.length);
+        const indexRight1 = mod(index + 1, cards.length);
+        const indexRight2 = mod(index + 2, cards.length);
+        const indexRight3 = mod(index + 3, cards.length);
 
-          let className = "card";
+        let className = "card";
 
-          if (i === index) {
-            className = "card card--active";
-          } else if (i === indexRight3) {
-            className = "card card--right3"
-          } else if (i === indexRight2) {
-            className = "card card--right2"
-          } else if (i === indexRight1) {
-            className = "card card--right1";
-          } else if (i === indexLeft1) {
-            className = "card card--left1";
-          } else if (i === indexLeft2) {
-            className = "card card--left2"
-          } else if (i === indexLeft3) {
-            className = "card card--left3"
-          } else {
-            className = "card";
-          }
+        if (i === index) {
+          className = "card card--active";
+        } else if (i === indexRight3) {
+          className = "card card--right3"
+        } else if (i === indexRight2) {
+          className = "card card--right2"
+        } else if (i === indexRight1) {
+          className = "card card--right1";
+        } else if (i === indexLeft1) {
+          className = "card card--left1";
+        } else if (i === indexLeft2) {
+          className = "card card--left2"
+        } else if (i === indexLeft3) {
+          className = "card card--left3"
+        } else {
+          className = "card";
+        }
 
-          return (
-            <>
-            <img
-              key={item.id}
-              className={className}
-              src={item.image}
-              alt="C"
-              // onClick ={() => alert(index)}
-            ></img>
-            </>
-          );
-        })}
-      </div>
+        return (
+          <>
+          <img
+            key={item.id}
+            className={className}
+            src={item.image}
+            alt="C"
+          ></img>
+          </>
+        );
+      })}
       </div>
     </div>
   );

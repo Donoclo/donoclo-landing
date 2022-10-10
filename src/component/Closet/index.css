@@ -1,24 +1,18 @@
 .closet-container {
-    /* height: 850px;
-    width: 1200px; */
     height: 100vh;
     width: 100%;
 
-    /* padding: 20px 0px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color: antiquewhite; */
+    /* background-color: #324141; */
 }
 
 .closet-contents {
     margin-top: 48px;
-
     display: flex;
 }
-
-.closet-clothes-col {}
 
 .closet-clothes-container {
     width: 310px;
@@ -28,9 +22,11 @@
 
     opacity: 0.4;
 }
+
 .closet-clothes-container:hover{
     opacity: 1;
 }
+
 .closet-clothes-container-selected {
     width: 310px;
     display: flex;
@@ -62,7 +58,6 @@
 .closet-clothes-colorchip {
     width: 16px;
     height: 16px;
-    /* background-color: wheat; */
 }
 
 .closet-clothes-desc-bottom {
@@ -71,7 +66,6 @@
 }
 
 .closet-model-container {
-    /* width: 500px; */
     width: 400px;
     height: 600px;
     margin: 0 30px;
@@ -88,7 +82,6 @@
     border-radius: 250px;
     border: solid 4px white;
     box-shadow: 0px 0px 24px 2px #324141;
-    /* position: relative; */
 }
 
 .closet-model-name {

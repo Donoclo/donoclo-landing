@@ -1,25 +1,38 @@
 
 .card-container {
-  /* height: 850px; */
   width: 100%;
   height: 100vh;
+  background-size: cover;
 
-  padding: 20px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* scroll-snap-align: start; */
-  /* background-color: antiquewhite; */
+  position: relative;
+  z-index: 0;
+  background-color: blanchedalmond;;
 }
+
+.image-container{
+  width: 60%;
+  position: relative;
+}
+
+
 .card-video{
-  height:600px;
-  /* margin: 12px 0; */
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.card-deco{
+  width: 100%;
 }
 
 .card-description{
-  color:white;
+  width: 50%;
   font-size: 16px;
-  width: 800px;
   word-break: break-all;
+  color:white;
 }

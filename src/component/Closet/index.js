@@ -2,20 +2,22 @@ import "./index.css";
 import { useState } from "react";
 
 const Closet = () => {
-  const [clothes, setClothes] = useState('c01')
-  const [isC01, setisC01] = useState(true)
+  const [clothes, setClothes] = useState('C01')
 
   const chooseClothes = () => {
     switch (clothes) {
-      case 'c01':
-        return <img className="closet-model-img" src="img/model1.png" />
-      case 'c02':
-        return <img className="closet-model-img" src="img/model2.png" />
-      case 'c03':
-        return <img className="closet-model-img" src="img/model3.png" />
-      case 'c04':
-        return <img className="closet-model-img" src="img/model4.png" />
+      case 'C01':
+        return <img className="closet-model-img" alt="" src="img/model1.png" />
+      case 'C02':
+        return <img className="closet-model-img" alt="" src="img/model2.png" />
+      case 'C03':
+        return <img className="closet-model-img" alt="" src="img/model3.png" />
+      case 'C04':
+        return <img className="closet-model-img" alt="" src="img/model4.png" />
+      default: 
+        return;
     }
+
   }
   return (
     <>
@@ -23,7 +25,7 @@ const Closet = () => {
         <h3 className="h3">CUSTOMIZE YOUR AVATAR</h3>
         <div className="closet-contents">
           <div className="closet-clothes-col">
-            <div className={clothes=="c01" ? "closet-clothes-container-selected" :"closet-clothes-container" } onClick={() => setClothes('c01')}  >
+            <div className={clothes==="C01" ? "closet-clothes-container-selected" :"closet-clothes-container" } onClick={() => setClothes('C01')}  >
               <img className="closet-clothes-image" alt="clothes_01" src="img/clothes1.png" />
               <div className="closet-clothes-desc-top">
                 <p className="closet-cothes-name">CO1</p>
@@ -34,7 +36,7 @@ const Closet = () => {
                 CAT T-SHIRT AND JEAN
               </div>
             </div>
-            <div className={clothes=="c02" ? "closet-clothes-container-selected" :"closet-clothes-container" } style={{ marginTop: '40px' }} onClick={() => setClothes('c02')}>
+            <div className={clothes==="C02" ? "closet-clothes-container-selected" :"closet-clothes-container" } style={{ marginTop: '40px' }} onClick={() => setClothes('C02')}>
               <img className="closet-clothes-image" alt="clothes_01" src="img/clothes2.png" />
               <div className="closet-clothes-desc-top">
                 <p className="closet-cothes-name">CO2</p>
@@ -48,11 +50,10 @@ const Closet = () => {
           </div>
           <div className="closet-model-container">
             {chooseClothes()}
-            {/* <img className="closet-model-img" src="img/model1.png"/> */}
-            <div className="closet-model-name">CO1</div>
+            <div className="closet-model-name">{clothes}</div>
           </div>
           <div className="closet-clothes-col">
-            <div className={clothes=="c03" ? "closet-clothes-container-selected" :"closet-clothes-container" } onClick={() => setClothes('c03')}>
+            <div className={clothes==="C03" ? "closet-clothes-container-selected" :"closet-clothes-container" } onClick={() => setClothes('C03')}>
               <img className="closet-clothes-image" alt="clothes_03" src="img/clothes3.png" />
               <div className="closet-clothes-desc-top">
                 <p className="closet-cothes-name">CO3</p>
@@ -63,7 +64,7 @@ const Closet = () => {
                 BLUE PADDING AND PANTS
               </div>
             </div>
-            <div className={clothes=="c04" ? "closet-clothes-container-selected" :"closet-clothes-container" } style={{ marginTop: '40px' }} onClick={() => setClothes('c04')}>
+            <div className={clothes==="C04" ? "closet-clothes-container-selected" :"closet-clothes-container" } style={{ marginTop: '40px' }} onClick={() => setClothes('C04')}>
               <img className="closet-clothes-image" alt="clothes_01" src="img/clothes4.png" />
               <div className="closet-clothes-desc-top">
                 <p className="closet-cothes-name">CO4</p>
