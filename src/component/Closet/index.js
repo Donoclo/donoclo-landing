@@ -21,7 +21,7 @@ const Closet = () => {
   }
   return (
     <>
-      <div className="closet-container">
+      <div className="closet-container" style={{background: 'url(img/closet-background-gra.png)'}}>
         <h3 className="h3">CUSTOMIZE YOUR AVATAR</h3>
         <div className="closet-contents">
           <div className="closet-clothes-col">

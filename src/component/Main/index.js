@@ -3,7 +3,7 @@ import './index.css';
 function Main(){
   return(
     <>
-    <div className="main-container">
+    <div className="main-container" style={{background: 'url(img/main-background-gra.png)'}}>
       <div className="main-image-container">
         <img className="main-image" alt="main" src="img/Main.png" />
 

@@ -1,18 +1,12 @@
 import "./index.css";
-import { useEffect, useState, useRef } from "react";
 
 const RoadMap = () => {
-
   return(
     <>
-      <div className="roadmap-container">
+      <div className="roadmap-container" style={{background: 'url(img/roadmap-background-gra.png)'}}>
         <div className="roadmap-contents">
-          {/* <h3 className="h3" style={{position:'absolute', top:'70px'}}>HOW OUR SERVICE WORKS</h3> */}
           <h3 className="h3">HOW OUR SERVICE WORKS</h3>
-
-          {/* <img className="roadmap-background" src="img/roadmap.png" style={position < 600 ?{ opacity: (position-200)/200 }  : position > 1000 ?{opacity: (-position+1300)/100} : {}}/> */}
-          {/* <img className="roadmap-background" src="img/roadmap.png"/> */}
-          <img className="roadmap-background" src="img/roadmap.png"/>
+          <img className="roadmap-background" alt="" src="img/roadmap.png"/>
 <p class="scroll-down">
           <div className="roadmap-road1" >
             <div className="roadmap-road-title">STEP 01</div>

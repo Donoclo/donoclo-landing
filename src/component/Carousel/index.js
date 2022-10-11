@@ -56,7 +56,7 @@ function Carousel() {
 
   return (
     // <div className="Carousel">
-    <div className="Carousel" style={{background: 'url(img/card-background.png)'}}>
+    <div className="Carousel" style={{background: 'url(img/carousel-background-gra.png)'}}>
       <h3 className="h3">EXPLORE</h3>
       <div className="carousel-container">
       {cards.map((item, i) => {
