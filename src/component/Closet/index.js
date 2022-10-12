@@ -2,17 +2,17 @@ import "./index.css";
 import { useState } from "react";
 
 const Closet = () => {
-  const [clothes, setClothes] = useState('C01')
+  const [clothes, setClothes] = useState('CO1')
 
   const chooseClothes = () => {
     switch (clothes) {
-      case 'C01':
+      case 'CO1':
         return <img className="closet-model-img" alt="" src="img/model1.png" />
-      case 'C02':
+      case 'CO2':
         return <img className="closet-model-img" alt="" src="img/model2.png" />
-      case 'C03':
+      case 'CO3':
         return <img className="closet-model-img" alt="" src="img/model3.png" />
-      case 'C04':
+      case 'CO4':
         return <img className="closet-model-img" alt="" src="img/model4.png" />
       default: 
         return;
@@ -21,11 +21,11 @@ const Closet = () => {
   }
   return (
     <>
-      <div className="closet-container" style={{background: 'url(img/closet-background-gra.png)'}}>
+      <div className="closet-container">
         <h3 className="h3">CUSTOMIZE YOUR AVATAR</h3>
         <div className="closet-contents">
           <div className="closet-clothes-col">
-            <div className={clothes==="C01" ? "closet-clothes-container-selected" :"closet-clothes-container" } onClick={() => setClothes('C01')}  >
+            <div className={clothes==="CO1" ? "closet-clothes-container-selected" :"closet-clothes-container" } onClick={() => setClothes('CO1')}  >
               <img className="closet-clothes-image" alt="clothes_01" src="img/clothes1.png" />
               <div className="closet-clothes-desc-top">
                 <p className="closet-cothes-name">CO1</p>
@@ -36,7 +36,7 @@ const Closet = () => {
                 CAT T-SHIRT AND JEAN
               </div>
             </div>
-            <div className={clothes==="C02" ? "closet-clothes-container-selected" :"closet-clothes-container" } style={{ marginTop: '40px' }} onClick={() => setClothes('C02')}>
+            <div className={clothes==="CO2" ? "closet-clothes-container-selected" :"closet-clothes-container" } style={{ marginTop: '40px' }} onClick={() => setClothes('CO2')}>
               <img className="closet-clothes-image" alt="clothes_01" src="img/clothes2.png" />
               <div className="closet-clothes-desc-top">
                 <p className="closet-cothes-name">CO2</p>
@@ -53,7 +53,7 @@ const Closet = () => {
             <div className="closet-model-name">{clothes}</div>
           </div>
           <div className="closet-clothes-col">
-            <div className={clothes==="C03" ? "closet-clothes-container-selected" :"closet-clothes-container" } onClick={() => setClothes('C03')}>
+            <div className={clothes==="CO3" ? "closet-clothes-container-selected" :"closet-clothes-container" } onClick={() => setClothes('CO3')}>
               <img className="closet-clothes-image" alt="clothes_03" src="img/clothes3.png" />
               <div className="closet-clothes-desc-top">
                 <p className="closet-cothes-name">CO3</p>
@@ -64,7 +64,7 @@ const Closet = () => {
                 BLUE PADDING AND PANTS
               </div>
             </div>
-            <div className={clothes==="C04" ? "closet-clothes-container-selected" :"closet-clothes-container" } style={{ marginTop: '40px' }} onClick={() => setClothes('C04')}>
+            <div className={clothes==="CO4" ? "closet-clothes-container-selected" :"closet-clothes-container" } style={{ marginTop: '40px' }} onClick={() => setClothes('CO4')}>
               <img className="closet-clothes-image" alt="clothes_01" src="img/clothes4.png" />
               <div className="closet-clothes-desc-top">
                 <p className="closet-cothes-name">CO4</p>

@@ -56,8 +56,8 @@ function Carousel() {
 
   return (
     // <div className="Carousel">
-    <div className="Carousel" style={{background: 'url(img/carousel-background-gra.png)'}}>
-      <h3 className="h3">EXPLORE</h3>
+    <div className="Carousel" style={{background: 'url(img/carousel-background-gra.png)', backgroundSize:"cover"}}>
+      <h3 className="h3-1">EXPLORE</h3>
       <div className="carousel-container">
       {cards.map((item, i) => {
         const indexLeft3 = mod(index - 3, cards.length);

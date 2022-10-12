@@ -7,6 +7,7 @@ import Header from './component/Header';
 import Main from './component/Main';
 import Card from './component/Card';
 import Mint from './component/Mint';
+import './font/font.css';
 
 function App() {
   const outerDivRef = useRef();
@@ -63,7 +64,7 @@ function App() {
   return (
     <>
       <Header />
-      <div ref={outerDivRef} className="outer">
+      <div ref={outerDivRef} className="outer" >
         <div className ="main-ani" style={scrollIndex === 1 ? { animation: 'fade-in 1s ease-out' } : {}}>
           <Main />
         </div>

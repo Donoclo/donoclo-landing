@@ -3,7 +3,7 @@ import "./index.css";
 const RoadMap = () => {
   return(
     <>
-      <div className="roadmap-container" style={{background: 'url(img/roadmap-background-gra.png)'}}>
+      <div className="roadmap-container" style={{background: 'url(img/roadmap-background-gra.png)', backgroundSize:"cover"}}>
         <div className="roadmap-contents">
           <h3 className="h3">HOW OUR SERVICE WORKS</h3>
           <img className="roadmap-background" alt="" src="img/roadmap.png"/>

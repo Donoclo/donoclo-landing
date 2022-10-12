@@ -1,12 +1,23 @@
+/* @import url('./font/font.css'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;900&display=swap');
+
+
+
 .App {
+
   text-align: center;
   background-color: black;
+
 }
 
 .h3{
   color: white;
-  font-size: 32px;
-  margin:0px
+  font-size: 40px;
+  margin:0px;
+
+  /* font-family: 'SUIT-'; */
+  /* font-weight: 900; */
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 body {
@@ -19,7 +30,6 @@ body {
   overflow-y: auto;
 }
 
-/* 화면에서 스크롤바 안보이게 */
 .outer::-webkit-scrollbar {
   display: none;
 }
