@@ -50,7 +50,7 @@ function Carousel() {
     setTimeout(() => {
       setIndex((index + 1) % cards.length);
       // console.log(index);
-    }, 2500);
+    }, 1800);
   }, [index]);
 
 
@@ -98,6 +98,9 @@ function Carousel() {
           </>
         );
       })}
+      </div>
+      <div className="carousel-description">
+        adflja;ielaksjdfljaweialsdjf
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ function Mint () {
       <div className="mint-contents">
         <img className="mint-image" alt="" src="img/mint-image.png"/>
         <div className="mint-desc-container">
-          <h3 className="h3"> DONATE IT <br></br> & MEET IT</h3>
+          <h3 className="h3"> MINT IT <br></br> & MEET IT</h3>
           <div className="mint-desc">Project sdfhjkqwrlsdpg wrkjhsd iu qpwir uwek hsdf
 sdofu qkrjh sdgpu qouhqwrnm sdli sdglkhjqawlsfkasdgse
 sdsdsdlgjbsdgljsdfsdf\ waoleihswekgdhsedg</div>

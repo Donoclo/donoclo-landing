@@ -2,7 +2,7 @@
 
 
 .roadmap-container{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     background-color: transparent;
@@ -10,8 +10,15 @@
     overflow: hidden;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
-
+.roadmap-gradient{
+    width:100vw;
+    height:40vh;
+    background: linear-gradient(to right, #FF88A7, #737CFF);
+    position:absolute;
+    bottom:0;
+}
 .roadmap-contents {
     height: 850px;
     width: 1200px;
@@ -23,15 +30,35 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
 
 }
 
-.roadmap-background {
+/* .roadmap-background {
     width: 1280px;
-}
+} */
+.roadmap-road-container{
+    display: flex;
+    margin-top: 80px;
 
-.roadmap-road1 {
+}
+.roadmap-road{
+    width:204px;
+    /* height:300px; */
+    border-radius: 20px;
+    padding:48px;
+    background-color: white;
+    margin-right:60px;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.roadmap-road:nth-child(3){
+    margin-right:0;
+}
+/* .roadmap-road1 {
     width: 200px;
     height: 240px;
     background: #FFFFFF;
@@ -71,7 +98,7 @@
     position: absolute;
     left: 835px;
     top: 240px;
-}
+} */
 
 .roadmap-road-title {
     font-weight: 900;
@@ -79,7 +106,7 @@
     line-height: 40px;
 
     color: #000000;
-    margin-bottom: 6px;
+    margin-top:16px;
 
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 900;
@@ -91,7 +118,8 @@
     line-height: 22px;
 
     color: #000000;
-    margin-bottom: 20px;
+    margin-top:4px;
+    margin-bottom: 32px;
 
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;
@@ -100,10 +128,11 @@
 .roadmap-road-desc {
     width: 100%;
     word-break: break-all;
+    text-align: center;
 
     font-weight: 500;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 20px;
 
     color: #000000;
 

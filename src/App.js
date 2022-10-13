@@ -65,16 +65,28 @@ function App() {
     <>
       <Header />
       <div ref={outerDivRef} className="outer" >
-        <div className ="main-ani" style={scrollIndex === 1 ? { animation: 'fade-in 1s ease-out' } : {}}>
+        <div className ="main-ani" style={scrollIndex === 1 ? { animation: 'fade-in 1s ease-in-out' } : {}}>
           <Main />
         </div>
-        <Card />
-        <div className ="roadmap-ani" style={scrollIndex === 3 ? { animation: 'fade-in 1s ease-out' } : {}}>
+        <div className ="roadmap-ani" style={scrollIndex === 2 ? { animation: 'fade-in 1s ease-in-out' } : {}}>
+          <Card />
+        </div>
+        {/* <Card /> */}
+        <div className ="roadmap-ani" style={scrollIndex === 3 ? { animation: 'fade-in 1s ease-in-out' } : {}}>
           <RoadMap />
         </div>
-        <Carousel />
-        <Closet />
-        <Mint />
+        <div className ="roadmap-ani" style={scrollIndex === 4 ? { animation: 'fade-in 1s ease-in-out' } : {}}>
+          <Carousel />
+        </div>
+        <div className ="roadmap-ani" style={scrollIndex === 5 ? { animation: 'fade-in 1s ease-in-out' } : {}}>
+          <Closet/>
+        </div>
+        <div className ="roadmap-ani" style={scrollIndex === 6 ? { animation: 'fade-in 1s ease-in-out' } : {}}>
+          <Mint />
+        </div>
+        {/* <Carousel /> */}
+        {/* <Closet /> */}
+        {/* <Mint /> */}
       </div>
     </>
   );
