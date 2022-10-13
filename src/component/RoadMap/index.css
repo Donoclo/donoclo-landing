@@ -10,6 +10,7 @@
     justify-content: center;
     position: relative;
 }
+
 .roadmap-gradient{
     width:100vw;
     height:40vh;
@@ -17,63 +18,31 @@
     position:absolute;
     bottom:0;
 }
+
 .roadmap-background{
     width: 1920px;
     position:absolute;
     z-index: 1;
 }
-/* .roadmap-contents {
-    max-width: 1920px;
-    width: 100vw;
-   
-    padding-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
 
-} */
 .roadmap-road-container{
     position:relative;
     display: flex;
 }
 
-
-/* .roadmap-road{
-    width:204px;
-    border-radius: 20px;
-    padding:48px;
-    background-color: white;
-    margin-right:60px;
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.15);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.roadmap-road:nth-child(3){
-    margin-right:0;
-} */
-
 .roadmap-road1 {
-    width: 220px;
+    width: 200px;
     background: #FFFFFF;
     border-radius: 47px;
-    padding: 40px;
+    padding: 40px 40px 60px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px 28px 0 0;
-    /* position: absolute;
-    left:0px;
-    top: 0px; */
-
+    margin: 80px 28px 0 0;
 }
 
-
 .roadmap-road2 {
-    width: 310px;
+    width: 200px;
     background: #FFFFFF;
     border-radius: 47px;
     padding: 40px;
@@ -84,7 +53,18 @@
 }
 
 .roadmap-road3 {
-    width: 280px;
+    width: 220px;
+    background: #FFFFFF;
+    border-radius: 47px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 180px 28px 100px 0;
+}
+
+.roadmap-road4 {
+    width: 220px;
     background: #FFFFFF;
     border-radius: 47px;
     padding: 40px;
@@ -93,6 +73,7 @@
     align-items: center;
     margin: 30px 0 240px 0;
 }
+
 .roadmap-road-icon{
     width:50px;
     height:50px;
@@ -112,20 +93,22 @@
 
 .roadmap-road-subtitle {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 22px;
+    text-align: center;
 
     color: #000000;
-    margin-top:4px;
-    margin-bottom: 32px;
+    margin-top: 8px;
+    margin-bottom: 24px;
 
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;
+
 }
 
 .roadmap-road-desc {
     width: 100%;
-    word-break: break-all;
+    word-break:keep-all;
     text-align: center;
 
     font-weight: 500;

@@ -7,15 +7,8 @@ const Card = () => {
         <video muted autoPlay loop className="card-background-video">
           <source src="video/card-background.mp4" />
         </video>
-        {/* <div className="card-container"> */}
         <div className="card-contents">
           <img className="card-video" alt="" src="img/card-transparent.gif" />
-          {/* <img className="card-deco" alt="" src="img/card-deco.png"/> */}
-          {/* <video muted autoPlay loop className="card-video">
-            <source src="video/card-video.mp4" />
-          </video> */}
-
-
           <div className="card-description">
             <h3 className="h3">DONATE CLOTHES &<br></br> MAKE YOUR OWN NFT</h3>
 

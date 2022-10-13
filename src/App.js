@@ -7,7 +7,6 @@ import Header from './component/Header';
 import Main from './component/Main';
 import Card from './component/Card';
 import Mint from './component/Mint';
-import './font/font.css';
 
 function App() {
   const outerDivRef = useRef();

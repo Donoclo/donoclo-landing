@@ -14,7 +14,6 @@ function Mint () {
             <div className="mint-button">DONATE NOW
              <img className="ruarrow" alt="" src="img/ruarrow.png"></img>
             </div>
-            
         </div>
         <img className="mint-figure" alt="" src="img/mint-fig.png"/>
       </div>

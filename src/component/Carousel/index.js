@@ -49,13 +49,11 @@ function Carousel() {
   useEffect(() => {
     setTimeout(() => {
       setIndex((index + 1) % cards.length);
-      // console.log(index);
     }, 1800);
   }, [index]);
 
 
   return (
-    // <div className="Carousel">
     <div className="Carousel" style={{background: 'url(img/carousel-background-gra.png)', backgroundSize:"cover"}}>
       <h3 className="h3-1">EXPLORE</h3>
       <div className="carousel-container">
