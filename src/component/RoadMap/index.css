@@ -5,9 +5,7 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    background-color: transparent;
-    /* padding: 100px 0 0  0; */
-    overflow: hidden;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -19,32 +17,31 @@
     position:absolute;
     bottom:0;
 }
-.roadmap-contents {
-    height: 850px;
-    width: 1200px;
-
-    /* padding: 20px 0px; */
+.roadmap-background{
+    width: 1920px;
+    position:absolute;
+    z-index: 1;
+}
+/* .roadmap-contents {
+    max-width: 1920px;
+    width: 100vw;
+   
     padding-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    position: absolute;
 
-}
-
-/* .roadmap-background {
-    width: 1280px;
 } */
 .roadmap-road-container{
+    position:relative;
     display: flex;
-    margin-top: 80px;
-
 }
-.roadmap-road{
+
+
+/* .roadmap-road{
     width:204px;
-    /* height:300px; */
     border-radius: 20px;
     padding:48px;
     background-color: white;
@@ -57,48 +54,49 @@
 }
 .roadmap-road:nth-child(3){
     margin-right:0;
-}
-/* .roadmap-road1 {
-    width: 200px;
-    height: 240px;
+} */
+
+.roadmap-road1 {
+    width: 220px;
     background: #FFFFFF;
     border-radius: 47px;
     padding: 40px;
-
-    position: absolute;
-    left: 100px;
-    top: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 28px 0 0;
+    /* position: absolute;
+    left:0px;
+    top: 0px; */
 
 }
 
 
 .roadmap-road2 {
-    width: 320px;
-    height: 190px;
+    width: 310px;
     background: #FFFFFF;
     border-radius: 47px;
     padding: 40px;
-
-    position: absolute;
-    left: 405px;
-    top: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 240px 28px 0 0;
 }
 
 .roadmap-road3 {
+    width: 280px;
+    background: #FFFFFF;
+    border-radius: 47px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
-    width: 210px;
-    height: 210px;
-    background: #FFFFFF;
-    border-radius: 200px;
-    padding: 70px;
-
-    position: absolute;
-    left: 835px;
-    top: 240px;
-} */
+    align-items: center;
+    margin: 30px 0 240px 0;
+}
+.roadmap-road-icon{
+    width:50px;
+    height:50px;
+}
 
 .roadmap-road-title {
     font-weight: 900;
