@@ -4,17 +4,19 @@ function Mint () {
   return (
     <>
     <div className="Mint">
-      <div className="mint-container">
-        <div className="mint-contents">
-          <h3 className="h3">MINT IT & MEET IT</h3>
-          <div className="mint-description">Project sdfhjkqwrlsdpg wrkjhsd iu qpwir uwek hsdf
-  sdofu qkrjh sdgpu qouhqwrnm sdli sdglkhjqawlsfkasdgseProject sdfhjkqwrlsdpg wrkjhsd iu qpwir uwek hsdf
-  sdofu qkrjh sdgpu qouhqwrnm sdli sdglkhjqawlsfkasdgse
-  sdsdsdlgjbsdgljsdfsdf\
-  waoleihswekgdhsedg</div>
-          <div className="mint-button">MINT NOW</div>
+      <img className="mint-background" alt="" src="img/mint-background.png"/>
+      <div className="mint-contents">
+        <img className="mint-image" alt="" src="img/mint-image.png"/>
+        <div className="mint-desc-container">
+          <h3 className="h3"> DONATE IT <br></br> & MEET IT</h3>
+          <div className="mint-desc">Project sdfhjkqwrlsdpg wrkjhsd iu qpwir uwek hsdf
+sdofu qkrjh sdgpu qouhqwrnm sdli sdglkhjqawlsfkasdgse
+sdsdsdlgjbsdgljsdfsdf\ waoleihswekgdhsedg</div>
+          <div className="donate-now">
+            <div className="donate-text"> DONATE NOW</div>
+            <img className="ruarrow" alt="ruarrow" src="img/ruarrow.png" />
+          </div>
         </div>
-        <img className="mint-figure" alt="" src="img/mint-fig.png"/>
       </div>
     </div>
     </>
