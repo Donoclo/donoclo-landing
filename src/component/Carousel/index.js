@@ -100,7 +100,8 @@ function Carousel() {
       })}
       </div>
       <div className="carousel-description">
-        adflja;ielaksjdfljaweialsdjf
+        You can make NFT like above through donated old clothes. <br></br>
+        Aren't you excited about what new value your old clothes will have?
       </div>
     </div>
   );

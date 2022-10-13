@@ -1,74 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;900&display=swap');
-
 .Mint{
   width: 100%;
   height: 100vh;
   position: relative;
-  display: block;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  object-fit: cover;
 }
 
 .mint-background{
   position: absolute;
-  width: 100%;
   bottom: 0;
+  width: 100%;
+  height: 40%;
+  z-index: 0;
+}
+
+.mint-container{
+  max-width: 1200px;
+  height: 100%;
+  
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 auto;
 }
 
 .mint-contents{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  /* position:absolute; */
-  margin: 0 auto;
-  padding-bottom: 80px;
-}
-
-.mint-desc-container{
-  display: flex;
   flex-direction: column;
-  width: 30%;
-  margin-left: 100px;
-}
-
-.mint-image{
-  width: 330px;
-  height: 330px;
-}
-
-.mint-desc{
-  font-size: 18px;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 300;
-  color: #ffffffa7;
-  margin: 20px 0 50px 0;
-}
-
-.donate-now{
-  width: 200px;
-  height: 50px;
-
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-
-  background:  white;
-  border-radius: 25px;
-  font-size: 18px;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 600;
-  z-index: 100;
+  
+  padding-top: 5%;
 }
 
-.donate-now:hover{
-  background-color: #f1f8ff;
-  
+.mint-description{
+  width: 30vw;
+  color: white;
+  font-size: 20px;
+  padding: 40px 0;
+  word-break: keep-all;
+  text-align: center;
+}
+
+.mint-button{
+  width: 220px;
+  height: 60px;
+  background: linear-gradient(to right, #FF3E78, #E76D76);
+  border-radius: 30px;
+  text-align: center;
+  line-height: 60px;
+
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+
+  z-index: 1;
+}
+
+.mint-button:hover{
+  background: #FF3E78;
+  scale: 1.05;
+}
+
+.mint-figure{
+  width: 60%;
+  object-fit: contain;
 }
 
 .ruarrow{
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   margin-left: 10px;
 }
