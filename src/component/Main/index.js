@@ -7,7 +7,7 @@ function Main(){
       <div className="main-image-container">
         <img className="main-image" alt="main" src="img/Main.png" />
         <div className="main-description">Donate old clothes to give them new value. 
-        Keep some special clothes that you want to remember in NFT. 
+        Keep some special clothes that you want to remember in ITEM.
         Oh, by the way, we can also protect the environment.
         </div>
       </div>

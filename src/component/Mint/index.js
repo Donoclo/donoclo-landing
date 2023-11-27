@@ -9,7 +9,7 @@ function Mint () {
         <div className="mint-contents">
           <h3 className="h3">MINT IT & MEET IT</h3>
           <div className="mint-description">
-            The first NFT collection will be available soon.<br></br>
+            The first ITEM collection will be available soon.<br></br>
             Stay tuned!</div>
             <div className="mint-button">DONATE NOW
              <img className="ruarrow" alt="" src="img/ruarrow.png"></img>

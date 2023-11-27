@@ -19,7 +19,7 @@ const RoadMap = () => {
               <img className="roadmap-road-icon" alt="" src="img/roadmap-icon2.png" />
               <div className="roadmap-road-title">STEP 02</div>
               <div className="roadmap-road-subtitle">Mint your own Metaverse Fashion</div>
-              <div className="roadmap-road-desc">DONOCLO will make 3D fashion models with your old clothes and make them as NFT. $DONO token will be rewarded also.</div>
+              <div className="roadmap-road-desc">DONOCLO will make 3D fashion models with your old clothes and make them as ITEM. $DONO point will be rewarded also.</div>
             </div>
           </div>
           <div>3
@@ -36,7 +36,7 @@ const RoadMap = () => {
               <img className="roadmap-road-icon" alt="" src="img/roadmap-icon4.png" />
               <div className="roadmap-road-title">STEP 04</div>
               <div className="roadmap-road-subtitle">Save Earth, Help Others</div>
-              <div className="roadmap-road-desc">Collected old clothes will be used to help others. DONOCLO Fashion NFT will can be a great medal representing your actions for Earth and Others.</div>
+              <div className="roadmap-road-desc">Collected old clothes will be used to help others. DONOCLO Fashion ITEM will can be a great medal representing your actions for Earth and Others.</div>
             </div>
           </div>
         </div>

@@ -80,12 +80,6 @@ function App() {
         <div className ="roadmap-ani" style={scrollIndex === 5 ? { animation: 'fade-in 1s ease-in-out' } : {}}>
           <Closet/>
         </div>
-        <div className ="roadmap-ani" style={scrollIndex === 6 ? { animation: 'fade-in 1s ease-in-out' } : {}}>
-          <Mint />
-        </div>
-        {/* <Carousel /> */}
-        {/* <Closet /> */}
-        {/* <Mint /> */}
       </div>
     </>
   );
